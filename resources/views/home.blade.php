@@ -72,34 +72,34 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center mb-50">
                             <div class="cat-icon">
-                                <span class="flaticon-null-1"></span>
+                                {{-- <span class="flaticon-null-1"></span> --}}
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Clean Water</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to
-                                    know your processes to.</p>
+                                <h5><a href="#">Vision</a></h5>
+                                <p>A world where every child has access to quality education and essential resources,
+                                    regardless of their background or circumstances.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat active text-center mb-50">
                             <div class="cat-icon">
-                                <span class="flaticon-think"></span>
+                                {{-- <span class="flaticon-think"></span> --}}
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Clean Water</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to
-                                    know your processes to.</p>
+                                <h5><a href="#">Mission</a></h5>
+                                <p>To empower underprivileged children and communities through education, support, and
+                                    sustainable initiatives, fostering a brighter future for all</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center mb-50">
                             <div class="cat-icon">
-                                <span class="flaticon-gear"></span>
+                                {{-- <span class="flaticon-gear"></span> --}}
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Clean Water</a></h5>
+                                <h5><a href="#">Core Value</a></h5>
                                 <p>The sea freight service has grown conside rably in recent years. We spend timetting to
                                     know your processes to.</p>
                             </div>
@@ -163,16 +163,16 @@
                             <div class="cases-caption">
                                 <h3><a href="#">Ensure Education For Every Poor Children</a></h3>
                                 <!-- Progress Bar -->
-                                <div class="single-skill mb-15">
+                                {{--  <div class="single-skill mb-15">
                                     <div class="bar-progress">
-                                        <div id="bar1" class="barfiller">
+                                       <div id="bar1" class="barfiller">
                                             <div class="tipWrap">
                                                 <span class="tip"></span>
                                             </div>
                                             <span class="fill" data-percentage="70"></span>
-                                        </div>
+                                        </div> 
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- / progress -->
                                 <div class="prices d-flex justify-content-between">
                                     <p>Raised:<span> $20,000</span></p>
@@ -189,7 +189,7 @@
                             <div class="cases-caption">
                                 <h3><a href="#">Providing Healthy Food For The Children</a></h3>
                                 <!-- Progress Bar -->
-                                <div class="single-skill mb-15">
+                                {{-- <div class="single-skill mb-15">
                                     <div class="bar-progress">
                                         <div id="bar2" class="barfiller">
                                             <div class="tipWrap">
@@ -198,7 +198,7 @@
                                             <span class="fill" data-percentage="25"></span>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- / progress -->
                                 <div class="prices d-flex justify-content-between">
                                     <p>Raised:<span> $20,000</span></p>
@@ -215,7 +215,7 @@
                             <div class="cases-caption">
                                 <h3><a href="#">Supply Drinking Water For The People</a></h3>
                                 <!-- Progress Bar -->
-                                <div class="single-skill mb-15">
+                                {{-- <div class="single-skill mb-15">
                                     <div class="bar-progress">
                                         <div id="bar3" class="barfiller">
                                             <div class="tipWrap">
@@ -224,7 +224,7 @@
                                             <span class="fill" data-percentage="50"></span>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- / progress -->
                                 <div class="prices d-flex justify-content-between">
                                     <p>Raised:<span> $20,000</span></p>
@@ -254,7 +254,8 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/team1.png" alt="">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJy0QCeJDsQuC0Lq8bWrSzCY-JU6a0bI3Wwg&usqp=CAU"
+                                    alt="">
                                 <!-- Blog Social -->
                                 <ul class="team-social">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -262,7 +263,7 @@
                                 </ul>
                             </div>
                             <div class="team-caption">
-                                <h3><a href="instructor.html">Bruce Roberts</a></h3>
+                                <h3><a href="#">Bruce Roberts</a></h3>
                                 <p>Volunteer leader</p>
                             </div>
                         </div>
@@ -270,7 +271,8 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/team2.png" alt="">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJy0QCeJDsQuC0Lq8bWrSzCY-JU6a0bI3Wwg&usqp=CAU"
+                                    alt="">
                                 <!-- Blog Social -->
                                 <ul class="team-social">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -286,7 +288,8 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/team3.png" alt="">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJy0QCeJDsQuC0Lq8bWrSzCY-JU6a0bI3Wwg&usqp=CAU"
+                                    alt="">
                                 <!-- Blog Social -->
                                 <ul class="team-social">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -302,7 +305,8 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/team4.png" alt="">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJy0QCeJDsQuC0Lq8bWrSzCY-JU6a0bI3Wwg&usqp=CAU"
+                                    alt="">
                                 <!-- Blog Social -->
                                 <ul class="team-social">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
