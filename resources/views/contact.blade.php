@@ -285,7 +285,8 @@
                                                 draggable="false"
                                                 style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
                                         </div>
-                                    </a></div>
+                                    </a>
+                                </div>
                                 <div
                                     style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 315px; top: 150px;">
                                     <div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Map Data
@@ -309,7 +310,8 @@
                                         <div
                                             style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
                                             <a style="text-decoration: none; cursor: pointer; display: none;">Map
-                                                Data</a><span>Map data ©2019 Google</span></div>
+                                                Data</a><span>Map data ©2019 Google</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
@@ -330,7 +332,8 @@
                                         <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html"
                                             target="_blank" rel="noopener"
                                             style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms
-                                            of Use</a></div>
+                                            of Use</a>
+                                    </div>
                                 </div><button draggable="false" title="Toggle fullscreen view"
                                     aria-label="Toggle fullscreen view" type="button"
                                     class="gm-control-active gm-fullscreen-control"
@@ -355,7 +358,8 @@
                                             title="Report errors in the road map or imagery to Google"
                                             href="https://www.google.com/maps/@-31.197,150.744,9z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
                                             style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report
-                                            a map error</a></div>
+                                            a map error</a>
+                                    </div>
                                 </div>
                                 <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false"
                                     controlwidth="40" controlheight="81"
@@ -420,54 +424,10 @@
                             <div style="line-height: 20px; margin: 15px 0px;"><span
                                     style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google Maps
                                     correctly.</span></div>
-                            <table style="width: 100%;">
-                                <tr>
-                                    <td style="line-height: 16px; vertical-align: middle;"><a
-                                            href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors"
-                                            target="_blank" rel="noopener"
-                                            style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own this
-                                            website?</a></td>
-                                    <td style="text-align: right;"><button class="dismissButton">OK</button></td>
-                                </tr>
-                            </table>
+
                         </div>
                     </div>
-                    <script>
-                        function initMap() {
-                            var uluru = {
-                                lat: -25.363,
-                                lng: 131.044
-                            };
-                            var grayStyles = [{
-                                    featureType: "all",
-                                    stylers: [{
-                                            saturation: -90
-                                        },
-                                        {
-                                            lightness: 50
-                                        }
-                                    ]
-                                },
-                                {
-                                    elementType: 'labels.text.fill',
-                                    stylers: [{
-                                        color: '#ccdee9'
-                                    }]
-                                }
-                            ];
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                center: {
-                                    lat: -31.197,
-                                    lng: 150.744
-                                },
-                                zoom: 9,
-                                styles: grayStyles,
-                                scrollwheel: false
-                            });
-                        }
-                    </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
-                    </script>
+
 
                 </div>
                 <div class="row">
@@ -478,12 +438,7 @@
                         <form class="form-contact contact_form" action="contact_process.php" method="post"
                             id="contactForm" novalidate="novalidate">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
-                                    </div>
-                                </div>
+
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <input class="form-control valid" name="name" id="name" type="text"
@@ -503,6 +458,12 @@
                                         <input class="form-control" name="subject" id="subject" type="text"
                                             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
                                             placeholder="Enter Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
                                     </div>
                                 </div>
                             </div>

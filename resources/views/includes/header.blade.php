@@ -29,13 +29,14 @@
                  <div class="container-fluid">
                      <div class="row align-items-center">
                          <!-- Logo -->
-                         <div class="col-xl-2 col-lg-2">
+                         <div class="col-xl-3 col-lg-3 d-flex">
                              <div class="logo">
-                                 <a href="#"><img src="assets/img/logo/logo.png" style="height: 60px;"
+                                 <a href="/"><img src="assets/img/logo/logo.png" style="height: 60px;"
                                          alt=""></a>
                              </div>
+                             {{-- <h5 style="color: #000">The Ekundayo's Foundation and Initiatives(E. F. I)</h5> --}}
                          </div>
-                         <div class="col-xl-10 col-lg-10">
+                         <div class="col-xl-9 col-lg-9">
                              <div class="menu-wrapper d-flex align-items-center justify-content-end">
                                  <!-- Main-menu -->
                                  <div class="main-menu d-none d-lg-block">
@@ -44,6 +45,7 @@
                                              <li><a href="/">Home</a></li>
                                              <li><a href="/about">About</a></li>
                                              <li><a href="/contact">Contact</a></li>
+                                             <li><a href="/become-a-volunteers">Ambassador / Volunteers</a></li>
                                          </ul>
                                      </nav>
                                  </div>

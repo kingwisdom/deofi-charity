@@ -46,6 +46,7 @@
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
                     <img src="{{ asset('assets/img/logo/loder.png') }}" alt="">
+
                 </div>
             </div>
         </div>

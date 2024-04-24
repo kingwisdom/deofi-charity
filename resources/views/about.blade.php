@@ -23,10 +23,44 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                         <!-- Section Tittle -->
-
+                        <div class="section-tittle text-center mb-80">
+                            <span>What we are doing</span>
+                            <h2>We Are In A Mission To Help The Helpless</h2>
+                        </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-cap">
+                                <h5><a href="#">Our Brief</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="single-cat text-center mb-50">
+                            {{-- <div class="cat-icon">
+                                <span class="flaticon-think"></span>
+                            </div> --}}
+                            <div class="">
+                                <p>Our nonprofit organization is dedicated to providing educational opportunities for poor
+                                    children at all levels of schooling. First, we provide financial assistance to cover
+                                    school costs for students enrolled in primary, intermediate, and senior secondary
+                                    schools, ensuring access to quality education regardless of socioeconomic constraints.
+                                </p>
+                                <p> Additionally, we provide schools with branded teaching resources to create suitable
+                                    learning environments, hence improving students' educational experiences. Furthermore,
+                                    we give unique instructional resources on major occasions like Children's Day and
+                                    Independence Day, fostering both study and celebration. Furthermore, we aggressively
+                                    seek collaboration with public and private schools to improve educational outcomes and
+                                    opportunities for kids. Finally, we provide help to orphans, focusing on the well-being
+                                    and integration of orphaned children into society through educational support and
+                                    resources.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </div>
         <!-- Services Area End -->

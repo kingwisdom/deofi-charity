@@ -20,3 +20,4 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('landing');
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+Route::get('/become-a-volunteers', [App\Http\Controllers\HomeController::class, 'volunteer'])->name('volunteer');
