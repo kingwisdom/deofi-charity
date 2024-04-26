@@ -13,11 +13,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('landing');
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+Route::post('/post-contact', [App\Http\Controllers\HomeController::class, 'post_contact'])->name('contact_process');
 Route::get('/become-a-volunteers', [App\Http\Controllers\HomeController::class, 'volunteer'])->name('volunteer');
+Route::post('/become-volunteers', [App\Http\Controllers\HomeController::class, 'post_volunteer'])->name('post_volunteer');

@@ -20,13 +20,17 @@
         <!--?  Contact Area start  -->
         <section class="contact-section">
             <div class="container">
-
+                @if (session('status'))
+                    <h3 class="alert alert-success">{{ session('status') }}</h3>
+                @endif
                 <div class="row">
                     <div class="col-12">
                         <h2 class="contact-title">Ambassador / Volunteers</h2>
                     </div>
+
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" method="post">
+                        <form class="form-contact contact_form" method="post" action={{ route('post_volunteer') }}>
+                            @csrf
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
@@ -49,6 +53,19 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
+                                        <input class="form-control" name="address" type="text"
+                                            placeholder="Please tell us your address">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="state" type="text"
+                                            placeholder="Enter your state">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
                                         <input class="form-control" name="resume" type="file">
                                     </div>
                                 </div>
@@ -56,7 +73,7 @@
 
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                                        <textarea class="form-control w-100" name="cl" id="message" cols="30" rows="9"
                                             onblur="this.placeholder = 'Cover Letter'" placeholder="Your Cover Letter"></textarea>
                                     </div>
                                 </div>
@@ -71,7 +88,6 @@
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
                                 <h3>Lagos, Nigeria.</h3>
-                                {{-- <p>Rosemead, CA 91770</p> --}}
                             </div>
                         </div>
                         <div class="media contact-info">
