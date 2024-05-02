@@ -82,20 +82,19 @@
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
                                 <h3>Lagos, Nigeria.</h3>
-                                {{-- <p>Rosemead, CA 91770</p> --}}
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>+234 679 27876</h3>
+                                <h3>+1 (385) 457-6738</h3>
                                 <p>24 hrs</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>support@deofi.com</h3>
+                                <h3>support@deofi.com.ng</h3>
                             </div>
                         </div>
                     </div>

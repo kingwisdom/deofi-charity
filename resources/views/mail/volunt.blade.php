@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td style="text-align:center;">
-                            <a href="https://rakeshmandal.com" title="logo" target="_blank">
+                            <a href="#" title="logo" target="_blank">
                                 {{-- <img width="60" src="https://i.ibb.co/hL4XZp2/android-chrome-192x192.png" title="logo" alt="logo"> --}}
                             </a>
                         </td>
@@ -54,22 +54,23 @@
                                         <p
                                             style="color:#455056; font-size:18px;line-height:20px; margin:0; font-weight: 500;">
                                             <strong
-                                                style="display: block;font-size: 13px; margin: 0 0 4px; color:rgba(0,0,0,.64); font-weight:normal;">Name</strong>{{ $volObj['name'] }}
+                                                style="display: block;font-size: 13px; margin: 0 0 4px; color:rgba(0,0,0,.64); font-weight:normal;">Name</strong>{{ $name }}
                                             <strong
-                                                style="display: block; font-size: 13px; margin: 24px 0 4px 0; font-weight:normal; color:rgba(0,0,0,.64);">Email</strong>{{ $volObj['email'] }}
+                                                style="display: block; font-size: 13px; margin: 24px 0 4px 0; font-weight:normal; color:rgba(0,0,0,.64);">Email</strong>{{ $email }}
                                             <strong
                                                 style="display: block; font-size: 13px; margin: 24px 0 4px 0; font-weight:normal; color:rgba(0,0,0,.64);">Phone
-                                                Number</strong>{{ $volObj['phone'] }}
+                                                Number</strong>{{ $phone }}
                                             <strong
                                                 style="display: block; font-size: 13px; margin: 24px 0 4px 0; font-weight:normal; color:rgba(0,0,0,.64);">Full
-                                                Address</strong>{{ $volObj['address'] }}
+                                                Address</strong>{{ $address }}
                                             <strong
-                                                style="display: block; font-size: 13px; margin: 24px 0 4px 0; font-weight:normal; color:rgba(0,0,0,.64);">State</strong>{{ $volObj['state'] }}
+                                                style="display: block; font-size: 13px; margin: 24px 0 4px 0; font-weight:normal; color:rgba(0,0,0,.64);">State</strong>{{ $state }}
 
                                             <strong
                                                 style="display: block; font-size: 12px; margin: 24px 0 4px 0; font-weight:400; color:rgba(0,0,0,.64); text-align:justify">Cover
-                                                Letter</strong>{{ $volObj['cl'] }}
+                                                Letter</strong>{{ $cl }}
                                         </p>
+                                        <p>please find the resume attached with this mail</p>
 
                                     </td>
                                 </tr>

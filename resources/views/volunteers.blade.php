@@ -29,20 +29,22 @@
                     </div>
 
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" method="post" action={{ route('post_volunteer') }}>
+                        <form class="form-contact contact_form" method="post" action={{ route('post_volunteer') }}
+                            enctype="multipart/form-data">
                             @csrf
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <input class="form-control" name="name" id="name" type="text"
-                                            onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                            onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name*"
+                                            required>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <input class="form-control" name="email" id="email" type="text"
-                                            placeholder="Enter your Email">
+                                            placeholder="Enter your Email*" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -54,16 +56,54 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <input class="form-control" name="address" type="text"
-                                            placeholder="Please tell us your address">
+                                            placeholder="Please tell us your address*" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="state" type="text"
-                                            placeholder="Enter your state">
+                                        <select name="state" class="form-control" required>
+                                            <option value="">Select State</option>
+                                            <option value="Abia">Abia</option>
+                                            <option value="Adamawa">Adamawa</option>
+                                            <option value="Akwa Ibom">Akwa Ibom</option>
+                                            <option value="Anambra">Anambra</option>
+                                            <option value="Bauchi">Bauchi</option>
+                                            <option value="Bayelsa">Bayelsa</option>
+                                            <option value="Benue">Benue</option>
+                                            <option value="Borno">Borno</option>
+                                            <option value="Cross River">Cross River</option>
+                                            <option value="Delta">Delta</option>
+                                            <option value="Ebonyi">Ebonyi</option>
+                                            <option value="Edo">Edo</option>
+                                            <option value="Ekiti">Ekiti</option>
+                                            <option value="Enugu">Enugu</option>
+                                            <option value="FCT">Federal Capital Territory (FCT)</option>
+                                            <option value="Gombe">Gombe</option>
+                                            <option value="Imo">Imo</option>
+                                            <option value="Jigawa">Jigawa</option>
+                                            <option value="Kaduna">Kaduna</option>
+                                            <option value="Kano">Kano</option>
+                                            <option value="Katsina">Katsina</option>
+                                            <option value="Kebbi">Kebbi</option>
+                                            <option value="Kogi">Kogi</option>
+                                            <option value="Kwara">Kwara</option>
+                                            <option value="Lagos">Lagos</option>
+                                            <option value="Nasarawa">Nasarawa</option>
+                                            <option value="Niger">Niger</option>
+                                            <option value="Ogun">Ogun</option>
+                                            <option value="Ondo">Ondo</option>
+                                            <option value="Osun">Osun</option>
+                                            <option value="Oyo">Oyo</option>
+                                            <option value="Plateau">Plateau</option>
+                                            <option value="Rivers">Rivers</option>
+                                            <option value="Sokoto">Sokoto</option>
+                                            <option value="Taraba">Taraba</option>
+                                            <option value="Yobe">Yobe</option>
+                                            <option value="Zamfara">Zamfara</option>
+                                        </select>
                                     </div>
                                 </div>
-
+                                <div style="margin-top: 30px !important"></div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <input class="form-control" name="resume" type="file">
@@ -93,14 +133,14 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>+1 253 565 2365</h3>
+                                <h3>+1 (385) 457-6738</h3>
                                 <p>24 hrs</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>support@deofi.com</h3>
+                                <h3>support@deofi.com.ng</h3>
                             </div>
                         </div>
                     </div>

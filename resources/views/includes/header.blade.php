@@ -9,7 +9,7 @@
                              <div class="header-info-left d-flex">
                                  <ul>
                                      <li>Phone: +234 (0) 679 27876</li>
-                                     <li>Email: info@deofi.com</li>
+                                     <li>Email: info@deofi.com.ng</li>
                                  </ul>
                                  <div class="header-social">
                                      <ul>

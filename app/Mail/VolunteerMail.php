@@ -19,43 +19,30 @@ class VolunteerMail extends Mailable
      * @return void
      */
     public $volObj;
-    public function __construct($volObj)
+    public $attachedFilePath;
+    public $attachedFile;
+
+    public function __construct($volObj, $attachedFile)
     {
         $this->volObj = $volObj;
+        $this->attachedFilePath = $attachedFile->getRealPath();
+        $this->attachedFile = $attachedFile;
     }
 
     /**
-     * Get the message envelope.
+     * Build the message.
      *
-     * @return \Illuminate\Mail\Mailables\Envelope
+     * @return $this
      */
-    public function envelope()
+    public function build()
     {
-        return new Envelope(
-            subject: 'Volunteer Mail',
-            cc: ['adeoyetemitayo99@gmail.com'],
-        );
-    }
-
-    /**
-     * Get the message content definition.
-     *
-     * @return \Illuminate\Mail\Mailables\Content
-     */
-    public function content()
-    {
-        return new Content(
-            view: 'mail.volunt',
-        );
-    }
-
-    /**
-     * Get the attachments for the message.
-     *
-     * @return array
-     */
-    public function attachments()
-    {
-        return [];
+        return $this
+            ->subject('Volunteer Mail')
+            ->cc(['adeoyetemitayo99@gmail.com', 'scholardayo@deofi.org.ng'])
+            ->view('mail.volunt')
+            ->attach($this->attachedFilePath, [
+                'as' => $this->attachedFile->getClientOriginalName(),
+                'mime' => $this->attachedFile->getClientMimeType(),
+            ]);
     }
 }

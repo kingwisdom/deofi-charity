@@ -18,7 +18,7 @@ class contactMail extends Mailable
      *
      * @return void
      */
-     public $messageObj;
+    public $messageObj;
     public function __construct($messageObj)
     {
         $this->messageObj = $messageObj;
@@ -33,7 +33,7 @@ class contactMail extends Mailable
     {
         return new Envelope(
             subject: 'Contact Message',
-            cc: ['adeoyetemitayo99@gmail.com'],
+            cc: ['scholardayo@deofi.org.ng', 'adeoyetemitayo99@gmail.com'],
         );
     }
 
