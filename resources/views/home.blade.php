@@ -36,12 +36,12 @@
                                         and the Underprivileged.</P>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn">
-                                        <a href="industries.html" class="btn hero-btn mb-10" data-animation="fadeInLeft"
+                                        <a href="/donate" class="btn hero-btn mb-10" data-animation="fadeInLeft"
                                             data-delay=".8s">Donate</a>
-                                        <a href="industries.html" class="cal-btn ml-15" data-animation="fadeInRight"
+                                        <a href="#" class="cal-btn ml-15" data-animation="fadeInRight"
                                             data-delay="1.0s">
                                             <i class="flaticon-null"></i>
-                                            <p>+12 1325 41</p>
+                                            <p>+234 0</p>
                                         </a>
                                     </div>
                                 </div>
@@ -122,7 +122,6 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center mb-50">
                             <div class="cat-icon">
-                                {{-- <span class="flaticon-null-1"></span> --}}
                                 <img src="assets/img/core/ded.png" alt="" style="height: 90px;">
                             </div>
                             <div class="cat-cap">
@@ -135,7 +134,6 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center mb-50">
                             <div class="cat-icon">
-                                {{-- <span class="flaticon-null-1"></span> --}}
                                 <img src="assets/img/core/emp.png" alt="" style="height: 90px;">
                             </div>
                             <div class="cat-cap">
@@ -235,75 +233,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cases mb-40">
-                            <div class="cases-img">
-                                <img src="assets/img/gallery/case1.png" alt="">
-                            </div>
-                            <div class="cases-caption">
-                                <h3><a href="#">Ensure Education For Every Poor Children</a></h3>
-                                <!-- Progress Bar -->
-                                {{--  <div class="single-skill mb-15">
-                                    <div class="bar-progress">
-                                       <div id="bar1" class="barfiller">
-                                            <div class="tipWrap">
-                                                <span class="tip"></span>
-                                            </div>
-                                            <span class="fill" data-percentage="70"></span>
-                                        </div> 
-                                    </div>
-                                </div> --}}
-                                <!-- / progress -->
-                                <div class="prices d-flex justify-content-between">
-                                    <p>Raised:<span> $20,000</span></p>
-                                    <p>Goal:<span> $35,000</span></p>
+                    @foreach ($event as $item)
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-cases mb-40">
+                                <div class="cases-img">
+                                    <img src={{ $item->image }} style="max-height: 30rem;" alt="">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cases mb-40">
-                            <div class="cases-img">
-                                <img src="assets/img/gallery/case2.png" alt="">
-                            </div>
-                            <div class="cases-caption">
-                                <h3><a href="#">Providing Healthy Food For The Children</a></h3>
-                                <!-- Progress Bar -->
+                                <div class="cases-caption">
+                                    <h3><a href={{ route('event', $item->slug) }}>{{ $item->title }}</a></h3>
 
-                                <!-- / progress -->
-                                <div class="prices d-flex justify-content-between">
-                                    <p>Raised:<span> $20,000</span></p>
-                                    <p>Goal:<span> $35,000</span></p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cases mb-40">
-                            <div class="cases-img">
-                                <img src="assets/img/gallery/case3.png" alt="">
-                            </div>
-                            <div class="cases-caption">
-                                <h3><a href="#">Supply Drinking Water For The People</a></h3>
-                                <!-- Progress Bar -->
-                                {{-- <div class="single-skill mb-15">
-                                    <div class="bar-progress">
-                                        <div id="bar3" class="barfiller">
-                                            <div class="tipWrap">
-                                                <span class="tip"></span>
-                                            </div>
-                                            <span class="fill" data-percentage="50"></span>
-                                        </div>
-                                    </div>
-                                </div> --}}
-                                <!-- / progress -->
-                                <div class="prices d-flex justify-content-between">
-                                    <p>Raised:<span> $20,000</span></p>
-                                    <p>Goal:<span> $35,000</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -400,11 +343,11 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-xl-5 col-lg-9 col-md-8">
                             <div class="wantToWork-caption wantToWork-caption2">
-                                <h2>Lets Chenge The World With Humanity</h2>
+                                <h2>Lets Change The World With Humanity</h2>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-4">
-                            <a href="#" class="btn white-btn f-right sm-left">Become A Volunteer</a>
+                            <a href="/become-a-volunteers" class="btn white-btn f-right sm-left">Become A Volunteer</a>
                         </div>
                     </div>
                 </div>
@@ -412,63 +355,22 @@
         </section>
         <!-- Want To work End -->
         <!--? Testimonial Start -->
-        <div class="testimonial-area testimonial-padding">
+        {{-- <div class="testimonial-area testimonial-padding">
             <div class="container">
-                <!-- Testimonial contents -->
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-8 col-lg-8 col-md-10">
                         <div class="h1-testimonial-active dot-style">
-                            <!-- Single Testimonial -->
                             <div class="single-testimonial text-center">
                                 <div class="testimonial-caption ">
-                                    <!-- founder -->
                                     <div class="testimonial-founder">
                                         <div class="founder-img mb-40">
                                             <img src="assets/img/gallery/testimonial.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
+                                            <span>- -</span>
+                                            <p>-</p>
                                         </div>
                                     </div>
                                     <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our
-                                            responsibility! So start caring for your body and it will care for you. Eat
-                                            clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder">
-                                        <div class="founder-img mb-40">
-                                            <img src="assets/img/gallery/testimonial.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our
-                                            responsibility! So start caring for your body and it will care for you. Eat
-                                            clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder">
-                                        <div class="founder-img mb-40">
-                                            <img src="assets/img/gallery/testimonial.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our
-                                            responsibility! So start caring for your body and it will care for you. Eat
-                                            clean it will care for you and workout hard.”</p>
+                                        <p>“-”</p>
                                     </div>
                                 </div>
                             </div>
@@ -476,7 +378,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Testimonial End -->
         <!--? Blog Area Start -->
         <section class="home-blog-area section-padding30">
@@ -485,50 +387,31 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-9 col-sm-10">
                         <div class="section-tittle text-center mb-90">
-                            <span>Our recent blog</span>
-                            <h2>Latest News from our recent blog</h2>
+                            <span>Our recent Gallery</span>
+                            <h2>Latest Pictures from our recent events</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="assets/img/gallery/home-blog1.png" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
+                    @foreach ($gallery as $item)
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="home-blog-single mb-30">
+                                <div class="blog-img-cap">
+                                    <div class="blog-img">
+                                        <img src={{ $item->image }} alt="">
+                                        <!-- Blog date -->
+                                        <div class="blog-date text-center">
+                                            <span>{{ $item->created_at->diffForHumans() }}</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>Creative derector</p>
-                                    <h3><a href="#">Footprints in Time is perfect House in Kurashiki</a>
-                                    </h3>
+                                    <div class="blog-cap">
+                                        {{-- <p>Creative derector</p> --}}
+                                        <h3>{{ $item->title }}</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="assets/img/gallery/home-blog2.png" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
-                                    </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>Creative derector</p>
-                                    <h3><a href="#">Footprints in Time is perfect House in Kurashiki</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>

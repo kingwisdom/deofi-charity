@@ -8,15 +8,20 @@
                          <div class="row d-flex justify-content-between align-items-center">
                              <div class="header-info-left d-flex">
                                  <ul>
-                                     <li>Phone: +234 (0) 679 27876</li>
-                                     <li>Email: info@deofi.com.ng</li>
+                                     <li>Phone: -</li>
+                                     <li>Email: <a href="mailto:info@deofi.com.ng" style="color: #000;">
+                                             info@deofi.com.ng</a></li>
                                  </ul>
                                  <div class="header-social">
                                      <ul>
-                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                         <li><a href="https://www.facebook.com/sai4ull"><i
-                                                     class="fab fa-facebook-f"></i></a></li>
-                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                         <li><a href="https://x.com/deofi_helps/" target="_blank"><i
+                                                     class="fab fa-twitter"></i></a></li>
+                                         <li><a href="https://instagram.com/deofi_helps/" target="_blank"><i
+                                                     class="fab fa-instagram"></i></a></li>
+                                         <li><a href="https://www.facebook.com/profile.php?id=61559182808429&name=xhp_nt__fb__action__open_user"
+                                                 target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                         <li><a href="https://www.linkedin.com/in/the-ekundayo-s-foundation-and-initiatives-6a8b23307?trk=contact-info"
+                                                 target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                                      </ul>
                                  </div>
                              </div>
@@ -51,7 +56,7 @@
                                  </div>
                                  <!-- Header-btn -->
                                  <div class="header-right-btn d-none d-lg-block ml-20">
-                                     <a href="/contact" class="btn header-btn">Donate</a>
+                                     <a href="/donate" class="btn header-btn">Donate</a>
                                  </div>
                              </div>
                          </div>

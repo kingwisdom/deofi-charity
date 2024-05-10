@@ -4,13 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Models\volunteer;
+use App\Models\Event;
+use App\Models\Gallery;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $event = Event::orderBy('created_at', 'desc')->limit(3)->get();
+        $gallery = Gallery::orderBy('created_at', 'desc')->limit(2)->get();
+        return view('home', compact('event', 'gallery'));
+    }
+
+    public function show_event($slug)
+    {
+        $event = Event::where('slug', $slug)->first();
+        return view('show_event', compact('event'));
     }
     public function about()
     {
