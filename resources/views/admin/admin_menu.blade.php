@@ -27,6 +27,15 @@
                                 <div class="single-job-items mb-30">
                                     <div class="job-items">
                                         <div class="job-tittle">
+                                            <a href="/events">
+                                                <h4>EVENTS</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-job-items mb-30">
+                                    <div class="job-items">
+                                        <div class="job-tittle">
                                             <a href="/create-event">
                                                 <h4>CREATE EVENT</h4>
                                             </a>
